@@ -23,8 +23,6 @@ body {
    width: 50%;
    height: 50%;
    background-color: lightgray; 
-   display: grid;
-   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
    margin-left: 20px;
 
 }
