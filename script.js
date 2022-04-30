@@ -3,7 +3,7 @@ const sliderValue = document.querySelector('.input');
 const leftDivOutput = document.querySelector('.sliderValue');
 const grid = document.querySelector('.grid');
 const btnApply = document.querySelector('.btnApply');
-leftDivOutput.textContent = sliderValue.value;
+leftDivOutput.textContent = sliderValue.value + ' x ' + sliderValue.value;
 let sliderInput = sliderValue.value;
 let string = 'auto ';
 
@@ -15,7 +15,7 @@ divCreation(sliderInput);
 let gridDivs = document.querySelectorAll('.gridDivs');
 
 sliderValue.addEventListener('input', (event) => {
-    leftDivOutput.textContent = sliderValue.value;
+    leftDivOutput.textContent = sliderValue.value + ' x ' + sliderValue.value;
     sliderInput = sliderValue.value;
 });
 
@@ -46,7 +46,7 @@ function divCreation(sliderInput) {
         mainDiv.appendChild(div); 
     }
 }
-console.log(gridDivs.length);
+
 gridDivs.forEach((div) => {
     div.addEventListener('mouseover', (event) => {
         event.target.style.backgroundColor = 'black';
