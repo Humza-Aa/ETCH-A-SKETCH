@@ -49,6 +49,7 @@ body {
   height: 17vh;
   background-color: rgba(250, 148, 148, 0.549);
   position: relative;
+  overflow: hidden;
 }
 
 .sliderValue {
